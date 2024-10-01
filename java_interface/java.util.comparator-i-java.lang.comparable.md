@@ -132,6 +132,13 @@ Comparator&#x3C;Person> byAge = new Comparator&#x3C;Person>() {
     }
 };
 
+Comparator&#x3C;Person> byAge = new Comparator&#x3C;Person>() {
+    @Override
+    public int compare(Person p1, Person p2) {
+        return p1.name.compareTo(p2.name);
+    }
+};
+
 class NameComparator implements Comparator&#x3C;Person> {
     @Override
     public int compare(Person p1, Person p2) {
